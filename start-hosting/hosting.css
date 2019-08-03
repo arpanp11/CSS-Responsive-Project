@@ -1,0 +1,67 @@
+.background {
+  background-color: rgba(225, 232, 235, 0.925);
+}
+
+.hosting {
+  background: linear-gradient(to bottom, #2ddf5c, #f1f16e);
+  position: relative;
+  margin: 100px auto;
+  width: 60%;
+  height: 350px;
+  border: 3px solid #ccc;
+  border-radius: 20px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.hosting--notify-content {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.notify {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  border: 2px solid #000000;
+  border-radius: 8px;
+}
+
+input[type='text'] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  font-size: 1.1rem;
+  box-sizing: border-box;
+}
+
+input[type='button'] {
+  background-color: #2ddf5c;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 10px 32px;
+  font-size: 1.1rem;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+input[type='button']:hover {
+  background-color: white;
+  color: #2ddf5c;
+}
+
+.notify--legal {
+  text-align: center;
+}
+
+@media (max-width: 40rem) {
+  input[type='button'] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
