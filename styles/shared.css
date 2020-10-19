@@ -2,13 +2,27 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  display: grid;
+  grid-template-rows: 3.5rem auto 8rem;
+  grid-template-areas:
+    'header'
+    'main'
+    'footer';
   font-family: 'Montserrat', sans-serif;
+  /* padding-top: 3.5rem; */
   margin: 0;
+  height: 100%;
 }
 
 main {
-  min-height: calc(100vh - 3.5rem - 8rem);
+  /* min-height: calc(100vh - 3.5rem - 8rem); */
+  grid-row: 2 / 3;
+  grid-area: main;
   margin-top: 3.5rem;
 }
 
@@ -129,6 +143,8 @@ main {
 
 .main-footer {
   background: black;
+  /* grid-row: 3 / 4; */
+  grid-area: footer;
   padding: 2rem;
   margin-top: 3rem;
 }
